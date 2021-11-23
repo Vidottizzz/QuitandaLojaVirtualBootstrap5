@@ -1,0 +1,4 @@
+/* Largura minima necessária pra quando tiverem em dispositivos móveis e tiverem na vertical */
+body {
+    min-width: 372px;
+}
