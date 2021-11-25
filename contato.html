@@ -35,7 +35,7 @@
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="stylesheet" href="/css/estilos.css">
-        <title>Quitanda Online :: Cadastro De Nova Senha</title>
+        <title>Quitanda Online :: Contato</title>
     </head>
     <body>
         <!-- em colunas para ficar um item em cima do outro, após o header/main/footer, ter uma
@@ -90,67 +90,87 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <form class="col-sm-10 col-md-8 col-lg-6" action="">
-                        <h1 class="pb-2">Cadastrar Nova Senha</h1>
+                        <div class="form-floating">
+                            <h1 class="mb-3">Entre em Contato</h1>
+                        </div>
                         <div class="form-floating mb-3">
                             <input
-                                type="password"
+                                type="text"
                                 name=""
-                                id="txtSenha"
+                                id="txtNomeCompleto"
                                 class="form-control"
                                 placeholder=" "
                                 autofocus
                             >
-                            <label for="txtSenha">Nova senha</label>
+                            <label for="name">Nome Completo</label>
                         </div>
                         <div class="form-floating mb-3">
                             <input
-                                type="txtConfSenha"
+                                type="email"
                                 name=""
-                                id="txtConfSenha"
+                                id="txtEmail"
                                 class="form-control"
                                 placeholder=" "
-                            >
-                            <label for="novasenha">Confirme Nova Senha</label>         
-                        </div>
-                            <button type="button" onclick="window.location.href='confirmcadastrosenha.html'" class="btn btn-lg btn-danger">Cadastrar Nova Senha</button>
-                    </form>
+                            ></input>                           
+                                <label for="txtEmail">E-mail</label>                       
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea
+                            id="txtMensagem"
+                            class="form-control"
+                            style="height: 200px;"
+                            placeholder=" "
+                        ></textarea>
+                        <label for="txtMensagem">Mensagem</label>
+                    </div>
+                    <button type="button" class="btn btn-lg btn-danger mb-3" onclick="window.location.href='/confirmcontato.html'">Enviar Mensagem</button>
+                    <p class="mt-3">Faremos nosso melhor para responder sua mensagem em até 2 dias úteis.</p>
+                    <p>
+                        Atenciosamento,
+                        <br>
+                        Central de relacionamento Quitanda Online
+                    </p lass="mt-3">
+                        <!--end col 10-->
+                    </div>
+                    <!--ends from group-->
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class=" border-top text-muted bg-light">
+        <div class="container">
+            <!-- row divide a div em 12 colunas, e então colocamos cada conjunto de item em 4 colunas cada, mas quando for maior que tamanho médio
+ocupa 4 colunas, bootstrap é mobile-first -->
+            <div class="row py-3">
+                <div class="col-12 col-md-4 text-center p-sm-3">
+                    &copy; 2020 - Quitanda Online Ltda ME
+                    <br>
+                    Rua Virtual Inexistente, 171, Compulândia/PC
+                    <br>
+                    CNPJ 99.999.999/0001-99
+                </div>
+                <div class="col-12 col-md-4 text-center p-3">
+                    <a href="/privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a>
+                    <br>
+                    <a href="/termos.html" class="text-decoration-none text-dark">Termos de Uso</a>
+                    <br>
+                    <a href="/quemsomos.html" class="text-decoration-none text-dark">Quem Somos</a>
+                    <br>
+                    <a href="/trocas.html" class="text-decoration-none text-dark">Trocas e Devoluções</a>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="/contato.html" class="text-decoration-none text-dark">Contato pelo Site</a>
+                    <br>
+                    Email:
+                    <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">Email@dominio.com</a>
+                    <br>
+                    Telefone:
+                    <a href="phone:2899999900" class="text-decoration-none text-dark">(28) 99999-9900</a>
                 </div>
             </div>
-        </main>
-        <footer class=" border-top text-muted bg-light">
-            <div class="container">
-                <!-- row divide a div em 12 colunas, e então colocamos cada conjunto de item em 4 colunas cada, mas quando for maior que tamanho médio
-  ocupa 4 colunas, bootstrap é mobile-first -->
-                <div class="row py-3">
-                    <div class="col-12 col-md-4 text-center p-sm-3">
-                        &copy; 2020 - Quitanda Online Ltda ME
-                        <br>
-                        Rua Virtual Inexistente, 171, Compulândia/PC
-                        <br>
-                        CNPJ 99.999.999/0001-99
-                    </div>
-                    <div class="col-12 col-md-4 text-center p-3">
-                        <a href="/privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a>
-                        <br>
-                        <a href="/termos.html" class="text-decoration-none text-dark">Termos de Uso</a>
-                        <br>
-                        <a href="/quemsomos.html" class="text-decoration-none text-dark">Quem Somos</a>
-                        <br>
-                        <a href="/trocas.html" class="text-decoration-none text-dark">Trocas e Devoluções</a>
-                    </div>
-                    <div class="col-12 col-md-4 text-center">
-                        <a href="/contato.html" class="text-decoration-none text-dark">Contato pelo Site</a>
-                        <br>
-                        Email:
-                        <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">Email@dominio.com</a>
-                        <br>
-                        Telefone:
-                        <a href="phone:2899999900" class="text-decoration-none text-dark">(28) 99999-9900</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+    </footer>
+</div>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

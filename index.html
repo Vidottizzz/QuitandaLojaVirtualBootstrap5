@@ -38,92 +38,151 @@
         <title>Quitanda Online :: Página Principal</title>
     </head>
     <body>
-      <!-- em colunas para ficar um item em cima do outro, após o header/main/footer, ter uma
+        <!-- em colunas para ficar um item em cima do outro, após o header/main/footer, ter uma
       div container  -->
-      <div class="d-flex flex-column wrapper">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
-            <div class="container">
-                <a class="navbar-brand" href="/">
-                    <b>Quitanda Online</b>
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target=".navbar-collapse"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse ">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/index.html">Principal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="/contato.html">Contato</a>
-                        </li>
-                    </ul>
-                    <div class="align-self-end">
-                        <ul class="navbar-nav">
+        <div class="d-flex flex-column wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <b>Quitanda Online</b>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ">
+                        <ul class="navbar-nav flex-grow-1">
                             <li class="nav-item">
-                                <a href="/cadastro.html" class="nav-link text-white">Quero me cadastrar</a>
+                                <a class="nav-link text-white" href="/index.html">Principal</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/login.html" class="nav-link text-white">Entrar</a>
-                            </li>
-                            <li class="nav-item">
-                                <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0" title="5 produto(s) no carrinho">
-                                    <small>5</small>
-                                </span>
-                                <a href="/carrinho.html" class="nav-link text-white">
-                                    <i class="bi-cart" style="font-size:24px;line-height: 24px;"></i>
-                                </a>
+                                <a class="nav-link text-white" href="/contato.html">Contato</a>
                             </li>
                         </ul>
-                    </div>
-                </ul>
+                        <div class="align-self-end">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="/cadastro.html" class="nav-link text-white">Quero me cadastrar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/login.html" class="nav-link text-white">Entrar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0" title="5 produto(s) no carrinho">
+                                        <small>5</small>
+                                    </span>
+                                    <a href="/carrinho.html" class="nav-link text-white">
+                                        <i class="bi-cart" style="font-size:24px;line-height: 24px;"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- com o flex fill o main vai se alongar para baixo até o rodapé ser empurrado para baixo -->
-    <main class="flex-fill">
-      <div class="container">
-      </div>
-    </main>
-    <footer class=" border-top text-muted bg-light">
+        </nav>
         <div class="container">
-          <!-- row divide a div em 12 colunas, e então colocamos cada conjunto de item em 4 colunas cada, mas quando for maior que tamanho médio
-          ocupa 4 colunas, bootstrap é mobile-first -->
-            <div class="row py-3">
-                <div class="col-12 col-md-4 text-center">
-                    &copy; 2020 - Quitanda Online Ltda ME
-                    <br>
-                    Rua Virtual Inexistente, 171, Compulândia/PC
-                    <br>
-                    CNPJ 99.999.999/0001-99
+          <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#carouselMain"
+                    data-bs-slide-to="0"
+                    class="active"                  
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselMain"
+                    data-bs-slide-to="1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselMain"
+                    data-bs-slide-to="2"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="/img/slides/slide01.jpg" class="d-none d-md-block w-100" alt="">
+                  <img src="/img/slides/slide01small.jpg" class="d-block d-md-none w-100" alt="">
                 </div>
-                <div class="col-12 col-md-4 text-center">
-                    <a href="/privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a>
-                    <br>
-                    <a href="/termos.html" class="text-decoration-none text-dark">Termos de Uso</a>
-                    <br>
-                    <a href="/quemsomos.html" class="text-decoration-none text-dark">Quem Somos</a>
-                    <br>
-                    <a href="/trocas.html" class="text-decoration-none text-dark">Trocas e Devoluções</a>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="/img/slides/slide01.jpg" class="d-none d-md-block w-100" alt="">
+                    <img src="/img/slides/slide01small.jpg" class="d-block d-md-none w-100" alt="">
                 </div>
-                <div class="col-12 col-md-4 text-center">
-                    <a href="/contato.html" class="text-decoration-none text-dark">Contato pelo Site</a>
-                    <br>
-                    Email:
-                    <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">Email@dominio.com</a>
-                    <br>
-                    Telefone:
-                    <a href="phone:2899999900" class="text-decoration-none text-dark">(28) 99999-9900</a>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <!-- tamanho normal não aparece, e só aparece quando tiver medio pra cima, ai fica block 
+                  e imagem pequena aparece normalmente e deixa de aparecer do medio pra cima -->
+                  <img src="/img/slides/slide01.jpg" class="d-none d-md-block w-100" alt="">
+                    <img src="/img/slides/slide01small.jpg" class="d-block d-md-none w-100" alt="">
                 </div>
             </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselMain"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselMain"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
-    </footer>
-      </div>
+
+
+        </div>
+        <!-- com o flex fill o main vai se alongar para baixo até o rodapé ser empurrado para baixo -->
+        <main class="flex-fill">
+            <div class="container">
+               
+            </div>
+        </main>
+        <footer class=" border-top text-muted bg-light">
+            <div class="container">
+                <!-- row divide a div em 12 colunas, e então colocamos cada conjunto de item em 4 colunas cada, mas quando for maior que tamanho médio
+ocupa 4 colunas, bootstrap é mobile-first -->
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center p-sm-3">
+                        &copy; 2020 - Quitanda Online Ltda ME
+                        <br>
+                        Rua Virtual Inexistente, 171, Compulândia/PC
+                        <br>
+                        CNPJ 99.999.999/0001-99
+                    </div>
+                    <div class="col-12 col-md-4 text-center p-3">
+                        <a href="/privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a>
+                        <br>
+                        <a href="/termos.html" class="text-decoration-none text-dark">Termos de Uso</a>
+                        <br>
+                        <a href="/quemsomos.html" class="text-decoration-none text-dark">Quem Somos</a>
+                        <br>
+                        <a href="/trocas.html" class="text-decoration-none text-dark">Trocas e Devoluções</a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="/contato.html" class="text-decoration-none text-dark">Contato pelo Site</a>
+                        <br>
+                        Email:
+                        <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">Email@dominio.com</a>
+                        <br>
+                        Telefone:
+                        <a href="phone:2899999900" class="text-decoration-none text-dark">(28) 99999-9900</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
